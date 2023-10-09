@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 
-import { IPublication } from "../types";
-import { createDateText } from "../js/utils";
+import {IPublication} from '../types';
+import {createDateText} from '../js/utils';
 
 interface IPublicationProps {
   publication: IPublication;
@@ -15,12 +15,12 @@ export default class Publication extends Component<IPublicationProps, {}> {
   }
 
   handleClick() {
-    const { publication } = this.props;
-    window.open(publication.link, "_blank");
+    const {publication} = this.props;
+    window.open(publication.link, '_blank');
   }
 
   render() {
-    const { publication } = this.props;
+    const {publication} = this.props;
 
     return (
       <div className="publication">
@@ -34,14 +34,14 @@ export default class Publication extends Component<IPublicationProps, {}> {
           <div className="date">
             {createDateText(publication.date, {
               showMonth: false,
-              showEndDate: false
+              showEndDate: false,
             })}
           </div>
         </div>
         <div className="resumeDescriptionWrapper">
           <p
             className="resumeDescription"
-            dangerouslySetInnerHTML={{ __html: publication.where }}
+            dangerouslySetInnerHTML={{__html: publication.where}}
           ></p>
         </div>
       </div>

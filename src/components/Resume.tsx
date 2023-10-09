@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 
 import {
   IJob,
@@ -6,17 +6,17 @@ import {
   ISkillGroup,
   ILanguage,
   IPublication,
-  ICourse
-} from "../types";
-import Job from "./Job";
-import Education from "./Education";
-import SkillGroup from "./SkillGroup";
-import Language from "./Language";
-import Course from "./Course";
-import Publication from "./Publication";
+  ICourse,
+} from '../types';
+import Job from './Job';
+import Education from './Education';
+import SkillGroup from './SkillGroup';
+import Language from './Language';
+import Course from './Course';
+import Publication from './Publication';
 
-import "../styles/reset.css";
-import "../styles/base.scss";
+import '../styles/reset.css';
+import '../styles/base.scss';
 
 interface IResumeProps {
   jobs: IJob[];
@@ -29,40 +29,40 @@ interface IResumeProps {
 
 export default class Resume extends Component<IResumeProps, {}> {
   renderJobs() {
-    const { jobs } = this.props;
+    const {jobs} = this.props;
     return jobs.map((job, index) => <Job key={index} job={job} />);
   }
 
   renderEducation() {
-    const { educations } = this.props;
+    const {educations} = this.props;
     return educations.map((education, index) => (
       <Education key={index} education={education} />
     ));
   }
 
   renderCourses() {
-    const { courses } = this.props;
+    const {courses} = this.props;
     return courses.map((courses, index) => (
       <Course key={index} course={courses} />
     ));
   }
 
   renderPublications() {
-    const { publications } = this.props;
+    const {publications} = this.props;
     return publications.map((publication, index) => (
       <Publication key={index} publication={publication} />
     ));
   }
 
   renderSkills() {
-    const { skills } = this.props;
+    const {skills} = this.props;
     return skills.map((skillGroup, index) => (
       <SkillGroup key={index} skillGroup={skillGroup} />
     ));
   }
 
   renderLanguages() {
-    const { languages } = this.props;
+    const {languages} = this.props;
     return languages.map((language, index) => (
       <Language key={index} language={language} />
     ));

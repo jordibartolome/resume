@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 import {
   PROJECTS,
   JOBS,
@@ -8,17 +8,17 @@ import {
   NETWORKS,
   PUBLICATIONS,
   RESUME_LINK,
-  COURSES
-} from "../data";
-import ProjectCard from "./ProjectCard";
-import Resume from "./Resume";
-import Network from "./Network";
-import NavBar from "./NavBar";
-import { IProject } from "../types";
+  COURSES,
+} from '../data';
+import ProjectCard from './ProjectCard';
+import Resume from './Resume';
+import Network from './Network';
+import NavBar from './NavBar';
+import {IProject} from '../types';
 
-import "../styles/reset.css";
-import "../styles/base.scss";
-import "../styles/font-awesome.min.css";
+import '../styles/reset.css';
+import '../styles/base.scss';
+import '../styles/font-awesome.min.css';
 
 export default class App extends Component {
   constructor(props: any) {
@@ -28,14 +28,14 @@ export default class App extends Component {
   }
 
   handleResumeClick() {
-    window.open(RESUME_LINK, "_blank");
+    window.open(RESUME_LINK, '_blank');
   }
 
   renderProjects() {
     const projectsJsx: JSX.Element[] = PROJECTS.map(
       (project: IProject, index) => (
         <ProjectCard key={index} project={project} />
-      )
+      ),
     );
 
     return (
@@ -53,7 +53,7 @@ export default class App extends Component {
       <div className="section" id="resume">
         <div className="sectionTitleWrapper">
           <h3 className="sectionTitle">
-            Resume{" "}
+            Resume{' '}
             <i
               onClick={this.handleResumeClick}
               className="openResumeIcon fa fa-file-pdf-o"
@@ -134,7 +134,7 @@ export default class App extends Component {
           <div className="footer">
             <span>
               The project is Open Source (MIT License), so feel free to fork it
-              or get any inspiration in{" "}
+              or get any inspiration in{' '}
               <a
                 className="regularLink"
                 href="https://github.com/jordibartolome/me"

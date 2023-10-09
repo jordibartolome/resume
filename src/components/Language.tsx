@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { ILanguage } from "../types";
+import React, {Component} from 'react';
+import {ILanguage} from '../types';
 
 interface ILanguageProps {
   language: ILanguage;
@@ -7,12 +7,12 @@ interface ILanguageProps {
 
 export default class Language extends Component<ILanguageProps> {
   render() {
-    const { language } = this.props;
+    const {language} = this.props;
 
     return (
       <div className="languages">
         <div className="resumeSectionHeader mediumSizeTitle">
-          <span className="important">{language.language}</span>:{" "}
+          <span className="important">{language.language}</span>:{' '}
           {language.level}
         </div>
       </div>

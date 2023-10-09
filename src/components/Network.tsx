@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { INetwork } from "../types";
+import React, {Component} from 'react';
+import {INetwork} from '../types';
 
 interface INetworkProps {
   network: INetwork;
@@ -13,13 +13,13 @@ export default class Network extends Component<INetworkProps> {
   }
 
   handleClick() {
-    const { network } = this.props;
+    const {network} = this.props;
 
-    window.open(network.link, "_blank");
+    window.open(network.link, '_blank');
   }
 
   render() {
-    const { network } = this.props;
+    const {network} = this.props;
 
     return (
       <div

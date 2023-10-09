@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { IProject } from "../types";
+import React, {Component} from 'react';
+import {IProject} from '../types';
 
 interface IProjectCardProps {
   project: IProject;
@@ -13,17 +13,15 @@ export default class ProjectCard extends Component<IProjectCardProps> {
   }
 
   handleClick() {
-    const { project } = this.props;
-    window.open(project.link, "_blank");
+    const {project} = this.props;
+    window.open(project.link, '_blank');
   }
 
   render() {
-    const { project } = this.props;
+    const {project} = this.props;
     return (
       <div className="project" onClick={this.handleClick}>
-        <div
-          className={`projectLogo ${project.id}`}
-        />
+        <div className={`projectLogo ${project.id}`} />
         <div className="textWrapper">
           <p className="projectTitle">{project.name}</p>
           <p className="projectDescription">{project.description}</p>

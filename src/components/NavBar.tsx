@@ -1,32 +1,32 @@
-import React, { Component } from "react";
-import { ISection } from "../types";
+import React, {Component} from 'react';
+import {ISection} from '../types';
 
 const SECTIONS: ISection[] = [
   {
-    text: "Home",
-    selector: "#home",
-    position: 0
+    text: 'Home',
+    selector: '#home',
+    position: 0,
   },
   {
-    text: "Projects",
-    selector: "#projects",
-    position: 0
+    text: 'Projects',
+    selector: '#projects',
+    position: 0,
   },
   {
-    text: "Resume",
-    selector: "#resume",
-    position: 0
+    text: 'Resume',
+    selector: '#resume',
+    position: 0,
   },
   {
-    text: "Hobbies",
-    selector: "#hobbies",
-    position: 0
+    text: 'Hobbies',
+    selector: '#hobbies',
+    position: 0,
   },
   {
-    text: "Contact",
-    selector: "#contact",
-    position: 0
-  }
+    text: 'Contact',
+    selector: '#contact',
+    position: 0,
+  },
 ];
 
 const NAV_BAR_HEIGHT = 40;
@@ -42,7 +42,7 @@ export default class NavBar extends Component<{}, INavBarState> {
 
     this.state = {
       top: true,
-      selectedElement: 0
+      selectedElement: 0,
     };
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -51,14 +51,14 @@ export default class NavBar extends Component<{}, INavBarState> {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleResize);
 
     this.calculatePositions();
   }
 
   calculatePositions() {
-    const app: HTMLElement = document.querySelector("#app") as HTMLElement;
+    const app: HTMLElement = document.querySelector('#app') as HTMLElement;
     // Check if app is present
     if (!app) {
       setTimeout(this.calculatePositions, 10);
@@ -66,7 +66,7 @@ export default class NavBar extends Component<{}, INavBarState> {
       for (let i = 0; i < SECTIONS.length; i++) {
         const section = SECTIONS[i];
         const element: HTMLElement = document.querySelector(
-          section.selector
+          section.selector,
         ) as HTMLElement;
 
         section.position = element.offsetTop;
@@ -84,7 +84,7 @@ export default class NavBar extends Component<{}, INavBarState> {
     const currentY = window.scrollY;
     this.setState({
       top: currentY === 0,
-      selectedElement
+      selectedElement,
     });
   }
 
@@ -105,13 +105,13 @@ export default class NavBar extends Component<{}, INavBarState> {
   }
 
   renderElements() {
-    const { selectedElement } = this.state;
+    const {selectedElement} = this.state;
 
     return SECTIONS.map((section: ISection, index: number) => {
       return (
         <div
           key={index}
-          className={`navItem ${index === selectedElement ? "selected" : ""}`}
+          className={`navItem ${index === selectedElement ? 'selected' : ''}`}
           onClick={() => {
             this.handleClick(section);
           }}
@@ -123,10 +123,10 @@ export default class NavBar extends Component<{}, INavBarState> {
   }
 
   render() {
-    const { top } = this.state;
+    const {top} = this.state;
 
     return (
-      <div id="navBar" className={`navBar ${top ? "top" : ""}`}>
+      <div id="navBar" className={`navBar ${top ? 'top' : ''}`}>
         {this.renderElements()}
       </div>
     );

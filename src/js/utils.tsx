@@ -1,5 +1,5 @@
-import React from "react";
-import { DateTime } from "luxon";
+import React from 'react';
+import {DateTime} from 'luxon';
 
 interface ICreateDateTextOptions {
   endDate?: DateTime;
@@ -7,10 +7,10 @@ interface ICreateDateTextOptions {
   showEndDate?: boolean;
 }
 
-const TODAY = "today";
+const TODAY = 'today';
 export function createDateText(
   startDate: DateTime,
-  { endDate, showMonth = true, showEndDate = true }: ICreateDateTextOptions = {}
+  {endDate, showMonth = true, showEndDate = true}: ICreateDateTextOptions = {},
 ): string {
   let end = TODAY;
   let result = `${startDate.year}`;
@@ -36,11 +36,11 @@ export function createDateText(
 export function createPositionText(
   name: string,
   place: string,
-  city?: string
+  city?: string,
 ): JSX.Element {
   let result: JSX.Element = (
     <>
-      <span className="important">{name}</span> at{" "}
+      <span className="important">{name}</span> at{' '}
       <span className="important">{place}</span>
     </>
   );

@@ -1,8 +1,8 @@
-import tippy from "tippy.js";
-import React, { Component } from "react";
-import { ISkillGroup } from "../types";
+import tippy from 'tippy.js';
+import React, {Component} from 'react';
+import {ISkillGroup} from '../types';
 
-import "tippy.js/dist/tippy.css";
+import 'tippy.js/dist/tippy.css';
 
 interface ISkillProps {
   skillGroup: ISkillGroup;
@@ -10,9 +10,9 @@ interface ISkillProps {
 
 export default class SkillGroup extends Component<ISkillProps, {}> {
   componentDidMount() {
-    const { skillGroup } = this.props;
+    const {skillGroup} = this.props;
     tippy(`#${this.idCreator(skillGroup.id)}`, {
-      content: `${skillGroup.group}`
+      content: `${skillGroup.group}`,
     });
   }
 
@@ -21,7 +21,7 @@ export default class SkillGroup extends Component<ISkillProps, {}> {
   }
 
   render() {
-    const { skillGroup } = this.props;
+    const {skillGroup} = this.props;
 
     const skills = skillGroup.elements.map((skill: string, index: number) => {
       return (

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 
 interface IBulletProps {
   text: string;
@@ -6,14 +6,14 @@ interface IBulletProps {
 
 export default class Bullet extends Component<IBulletProps> {
   render() {
-    const { text } = this.props;
+    const {text} = this.props;
 
     return (
       <div className="bulletWrapper">
         <p className="bulletSymbol">-</p>
         <p
           className="resumeBullet"
-          dangerouslySetInnerHTML={{ __html: text }}
+          dangerouslySetInnerHTML={{__html: text}}
         ></p>
       </div>
     );
