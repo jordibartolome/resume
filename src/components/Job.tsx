@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {IJob} from '../types';
-import Bullet from './Bullet';
 import {createDateText, createPositionText} from '../js/utils';
+
+import Bullet from './Bullet';
+import {IJob} from '../types';
 
 interface IJobProps {
   job: IJob;

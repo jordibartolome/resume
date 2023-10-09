@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import {ISection} from '../types';
 
 const SECTIONS: ISection[] = [

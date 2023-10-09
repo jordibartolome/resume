@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import {INetwork} from '../types';
 
 interface INetworkProps {

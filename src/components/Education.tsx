@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Bullet from './Bullet';
 
+import Bullet from './Bullet';
 import {IEducation} from '../types';
 import {createDateText} from '../js/utils';
 import {createPositionText} from '../js/utils';

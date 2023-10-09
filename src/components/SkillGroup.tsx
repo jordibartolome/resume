@@ -1,8 +1,9 @@
-import tippy from 'tippy.js';
-import React, {Component} from 'react';
-import {ISkillGroup} from '../types';
-
 import 'tippy.js/dist/tippy.css';
+
+import React, {Component} from 'react';
+
+import {ISkillGroup} from '../types';
+import tippy from 'tippy.js';
 
 interface ISkillProps {
   skillGroup: ISkillGroup;

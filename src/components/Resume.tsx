@@ -1,22 +1,22 @@
-import React, {Component} from 'react';
-
-import {
-  IJob,
-  IEducation,
-  ISkillGroup,
-  ILanguage,
-  IPublication,
-  ICourse,
-} from '../types';
-import Job from './Job';
-import Education from './Education';
-import SkillGroup from './SkillGroup';
-import Language from './Language';
-import Course from './Course';
-import Publication from './Publication';
-
 import '../styles/reset.css';
 import '../styles/base.scss';
+
+import {
+  ICourse,
+  IEducation,
+  IJob,
+  ILanguage,
+  IPublication,
+  ISkillGroup,
+} from '../types';
+import React, {Component} from 'react';
+
+import Course from './Course';
+import Education from './Education';
+import Job from './Job';
+import Language from './Language';
+import Publication from './Publication';
+import SkillGroup from './SkillGroup';
 
 interface IResumeProps {
   jobs: IJob[];

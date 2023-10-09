@@ -1,13 +1,14 @@
-import {DateTime} from 'luxon';
 import {
-  IProject,
-  IJob,
-  ISkillGroup,
-  INetwork,
-  ILanguage,
-  IPublication,
   ICourse,
+  IJob,
+  ILanguage,
+  INetwork,
+  IProject,
+  IPublication,
+  ISkillGroup,
 } from './types';
+
+import {DateTime} from 'luxon';
 
 const DATE_FORMAT = 'dd-MM-yyyy';
 export const RESUME_LINK =
@@ -271,16 +272,8 @@ export const NETWORKS: INetwork[] = [
     className: 'fa fa-fw fa-github',
     link: 'https://github.com/jordibartolome',
   },
-  // {
-  // 	className: "fa fa-fw fa-twitter",
-  // 	link: "https://www.twitter.com/jordibartolome"
-  // },
   {
     className: 'fa fa-fw fa-youtube',
     link: 'https://www.youtube.com/user/tubasu',
   },
-  // {
-  // 	className: "fa fa-fw fa-google-plus",
-  // 	link: "https://plus.google.com/+JordiBartolom%C3%A9Guill%C3%A9n/posts"
-  // }
 ];
