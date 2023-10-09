@@ -18,7 +18,7 @@ export const PROJECTS: IProject[] = [
     id: "google",
     name: "Google",
     logoUrl: "/images/google.jpg",
-    description: "Google Assistant team",
+    description: "Google Assistant team.",
     link: "https://www.google.com/"
   },
   {

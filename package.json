@@ -10,6 +10,7 @@
     "@types/luxon": "^1.21.0",
     "history": "^4.10.1",
     "luxon": "^3.4.3",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
