@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.c1568dfa.css",
-    "main.js": "/resume/static/js/main.0b011536.js",
+    "main.css": "/resume/static/css/main.49da4914.css",
+    "main.js": "/resume/static/js/main.87ed4d53.js",
     "static/js/787.dc9ee2bf.chunk.js": "/resume/static/js/787.dc9ee2bf.chunk.js",
     "static/media/homeBackground.jpg": "/resume/static/media/homeBackground.6c0276d6f595174816a4.jpg",
     "static/media/fonts.svg": "/resume/static/media/fonts.74265f82b7570e504108.svg",
@@ -10,16 +10,20 @@
     "static/media/sourcesanspro-light-webfont.ttf": "/resume/static/media/sourcesanspro-light-webfont.f0ce707c5c3c75f2f32b.ttf",
     "static/media/fontawesome-webfont.woff?v=4.2.0": "/resume/static/media/fontawesome-webfont.6e8ec896aab286231d3c.woff",
     "static/media/fontawesome-webfont.eot": "/resume/static/media/fontawesome-webfont.1c77d5ab10c945269a09.eot",
+    "static/media/aws.png": "/resume/static/media/aws.e6543881b21b8938d172.png",
     "static/media/sourcesanspro-light-webfont.woff": "/resume/static/media/sourcesanspro-light-webfont.4c3d7d8f729f4805064d.woff",
+    "static/media/google.jpg": "/resume/static/media/google.7f473cd11748361afae3.jpg",
     "static/media/sourcesanspro-light-webfont.eot": "/resume/static/media/sourcesanspro-light-webfont.d176c2118524249a604e.eot",
     "static/media/Restaurant.woff": "/resume/static/media/Restaurant.a8eb3078b11a6dc171a7.woff",
+    "static/media/whatameal.png": "/resume/static/media/whatameal.a8be5558e7264e3f7dd9.png",
+    "static/media/music21.png": "/resume/static/media/music21.0e2b2e3c773a735e9c54.png",
     "index.html": "/resume/index.html",
-    "main.c1568dfa.css.map": "/resume/static/css/main.c1568dfa.css.map",
-    "main.0b011536.js.map": "/resume/static/js/main.0b011536.js.map",
+    "main.49da4914.css.map": "/resume/static/css/main.49da4914.css.map",
+    "main.87ed4d53.js.map": "/resume/static/js/main.87ed4d53.js.map",
     "787.dc9ee2bf.chunk.js.map": "/resume/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1568dfa.css",
-    "static/js/main.0b011536.js"
+    "static/css/main.49da4914.css",
+    "static/js/main.87ed4d53.js"
   ]
 }
