@@ -56,7 +56,7 @@ export const PROJECTS: IProject[] = [
     name: 'jordibartolome.me',
     logoUrl: '/images/jordibartolome.png',
     description: 'This site! Feel free to fork it on github.',
-    link: '/',
+    link: 'https://jordibartolome.github.io/resume/',
   },
   {
     id: 'music21',
