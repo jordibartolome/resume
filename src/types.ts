@@ -1,6 +1,7 @@
 import { DateTime } from "luxon";
 
 export interface IProject {
+  id: string;
   name: string;
   logoUrl: string;
   description: string;

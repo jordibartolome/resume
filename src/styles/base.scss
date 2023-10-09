@@ -248,6 +248,34 @@ body {
       background-repeat: no-repeat;
       background-position: 50% 80%;
       margin: 0 auto;
+
+      &.google {
+        background-image: url("/images/google.jpg");
+      }
+
+      &.amazon {
+        background-image: url("/images/aws.png");
+      }
+
+      &.noteflight {
+        background-image: url("/images/noteflight.png");
+      }
+
+      &.volotea {
+        background-image: url("/images/volotea.png");
+      }
+
+      &.whatameal {
+        background-image: url("/images/whatameal.png");
+      }
+
+      &.music21 {
+        background-image: url("/images/music21.png");
+      }
+
+      &.me {
+        background-image: url("/images/jordibartolome.png");
+      }
     }
 
     .textWrapper {

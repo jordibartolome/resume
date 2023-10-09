@@ -15,18 +15,21 @@ export const RESUME_LINK =
 
 export const PROJECTS: IProject[] = [
   {
+    id: "google",
     name: "Google",
     logoUrl: "/images/google.jpg",
     description: "Google Assistant team",
     link: "https://www.google.com/"
   },
   {
+    id: "amazon",
     name: "Amazon Web Services",
     logoUrl: "/images/aws.png",
     description: "AWS Detective, a new cybersecurity service.",
     link: "https://www.aws.com/detective"
   },
   {
+    id: "noteflight",
     name: "Noteflight",
     logoUrl: "/images/noteflight.png",
     description:
@@ -34,24 +37,28 @@ export const PROJECTS: IProject[] = [
     link: "http://www.noteflight.com"
   },
   {
+    id: "whatameal",
     name: "Whatameal",
     logoUrl: "/images/whatameal.png",
     description: "Share and create recipes online.",
     link: "https://www.whatameal.com"
   },
   {
+    id: "volotea",
     name: "Volotea",
     logoUrl: "/images/volotea.png",
     description: "A new European airline. ",
     link: "https://www.volotea.com/en"
   },
   {
+    id: "me",
     name: "jordibartolome.me",
     logoUrl: "/images/jordibartolome.png",
     description: "This site! Feel free to fork it on github.",
     link: "/"
   },
   {
+    id: "music21",
     name: "music21",
     logoUrl: "/images/music21.png",
     description:
@@ -68,7 +75,7 @@ export const JOBS: IJob[] = [
     city: "Mountain View, CA, United States",
     startDate: DateTime.fromFormat("22-04-2021", DATE_FORMAT),
     description:
-      "Worked on Google Assistant.",
+      "Worked on Google Assistant. Understanding how Assistant and Bard queries are executed.",
     bullets: []
   },
   {

@@ -22,8 +22,7 @@ export default class ProjectCard extends Component<IProjectCardProps> {
     return (
       <div className="project" onClick={this.handleClick}>
         <div
-          style={{ backgroundImage: `url(${project.logoUrl})` }}
-          className="projectLogo"
+          className={`projectLogo ${project.id}`}
         />
         <div className="textWrapper">
           <p className="projectTitle">{project.name}</p>
